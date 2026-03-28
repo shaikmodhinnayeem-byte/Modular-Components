@@ -1,0 +1,49 @@
+.status-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 20px 24px;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+  animation: fadeUp 0.4s ease both;
+}
+
+.status-card:hover {
+  transform: translateY(-2px);
+}
+
+.status-card--glow {
+  animation: fadeUp 0.4s ease both, glow-pulse 3s ease-in-out infinite;
+}
+
+.status-card__glow-bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60px;
+  height: 60px;
+  /* background set inline per variant */
+}
+
+.status-card__label {
+  color: var(--text-muted);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 8px;
+}
+
+.status-card__value {
+  font-size: 32px;
+  font-weight: 700;
+  font-family: var(--font-display);
+  line-height: 1;
+  /* color set inline per variant */
+}
+
+.status-card__sub {
+  color: var(--text-dim);
+  font-size: 11px;
+  margin-top: 6px;
+}

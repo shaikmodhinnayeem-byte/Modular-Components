@@ -1,0 +1,6 @@
+/* AppRoutes renders the active module — no additional wrapper styles needed.
+   Add transition animations here if you want page-level fade effects. */
+
+.route-view {
+  animation: fadeUp 0.3s ease both;
+}

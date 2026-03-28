@@ -1,0 +1,78 @@
+.timetable-legend {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.timetable-legend-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+.timetable-legend-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+}
+
+.timetable-scroll {
+  overflow-x: auto;
+}
+
+.timetable {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 500px;
+}
+
+.timetable th {
+  padding: 10px 14px;
+  font-size: 12px;
+  font-family: var(--font-display);
+  color: var(--text-muted);
+}
+
+.timetable th.today-col {
+  color: var(--accent);
+  background: rgba(108,99,255,0.07);
+  border-radius: 8px 8px 0 0;
+}
+
+.timetable th.time-col {
+  color: var(--text-dim);
+  font-size: 11px;
+  text-align: left;
+  width: 60px;
+}
+
+.timetable td {
+  padding: 6px;
+  border-bottom: 1px solid rgba(42,42,64,0.13);
+}
+
+.timetable td.time-cell {
+  padding: 10px 14px;
+  color: var(--text-dim);
+  font-size: 11px;
+  border-right: 1px solid rgba(42,42,64,0.13);
+}
+
+.timetable td.today-cell {
+  background: rgba(108,99,255,0.03);
+}
+
+.timetable-subject {
+  border-radius: 6px;
+  padding: 8px 10px;
+  font-size: 12px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.timetable-empty-cell {
+  height: 36px;
+}
